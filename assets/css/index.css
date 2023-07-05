@@ -44,6 +44,9 @@ body{
 .width-30{
     width: 30%;
 }
+.width-50{
+    width: 50%;
+}
 .color-neon {
     color: var(--neon-green)
 }
@@ -104,4 +107,21 @@ body{
 }
 .neon-glow{
     box-shadow: 1px 1px 17px 3px var(--neon-green);
+}
+
+
+@media (max-width:992px) {
+    .card.width-30{
+        width: 50%;
+    }
+}
+@media (max-width:768px) {
+    .card.width-30{
+        width: 70%;
+    }
+}
+@media (max-width:568px) {
+    .card.width-30{
+        width: 90%;
+    }
 }
