@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+.bg-primary {
+    background-color: var(--dark-blue)
+}
+
+.height-full {
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pos--relative{
+    position: relative;
+}
+.card {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow:1px 1px 20px 0px #292727c1;
+    padding-inline: 25px;
+    padding-block: 30px;
+}
+.width-30{
+    width: 30%;
+}
+.color-neon {
+    color: var(--neon-green)
+}
+
+.fs--small {
+    font-size: 11px;
+}
+
+.text--capital {
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+}
+.letter-space {
+    letter-spacing: 2px;
+}
+.padding-block--2{
+    padding-block: 2rem;
+}
+.padding-block-end--2{
+    padding-block-end: 2rem;
+}
+.color-light-cyan{
+    color: var(--light-cyan);
+}
+.qoute{
+    font-size: 20px
+}
+.flow--bottom{
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.bg-neon{
+    background-color: var(--neon-green);
+}
+.bg-grayish-blue{
+    background-color: var(--dark-grayish-blue);
+}
+.dice{
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.neon-glow{
+    box-shadow: 1px 1px 17px 3px var(--neon-green);
+}
