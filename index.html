@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Advice generator app</title>
   <link rel="stylesheet" href="assets/css/index.css">
 
 </head>
+
 <body>
 
 
   <main class="height-full bg-primary flex-center">
-      <div class="card pos--relative width-30 center bg-grayish-blue">
-        <h2 class="letter-space color-neon fs--small text--capital">advice # <span id="advice-number"></span></h2>
-        <p class="qoute padding-block--2 color-light-cyan">
-          
-        </p>
-        <img id="divider" src="assets/images/pattern-divider-mobile.svg" class="padding-block-end--2" alt="pattern-divider-desktop">
-          <button type="submit" class="dice flow--bottom bg-neon neon-glow">
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
-          </button>
+    <div class="card pos--relative width-30 center bg-grayish-blue">
+      <h2 class="letter-space color-neon fs--small text--capital">advice # <span id="advice-number"></span></h2>
+      <p class="qoute padding-block--2 color-light-cyan">
+
+      </p>
+
+      <picture>
+        <source media="(min-width:1000px)" srcset="assets/images/pattern-divider-desktop.svg">
+        <source media="(max-width:999px)" srcset="assets/images/pattern-divider-mobile.svg">
+        <img id="divider" src="assets/images/pattern-divider-desktop.svg" class="padding-block-end--2" alt="pattern-divider-desktop">
+      </picture>
+      
+      <button type="submit" class="dice flow--bottom bg-neon neon-glow">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+            fill="#202733" />
+        </svg>
+      </button>
     </div>
   </main>
 
 
   <script src="assets/js/index.js"></script>
-  <script src="assets/js/media.js"></script>
 </body>
+
 </html>
