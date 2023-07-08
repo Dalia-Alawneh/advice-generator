@@ -1,9 +1,8 @@
-const API_URL = "https://api.adviceslip.com/advice";
-let adviceSlip = {};
 const cardElement = document.querySelector('.card');
 const diceBtnElement = document.querySelector('.dice');
 
 async function fetchAdvice() {
+    const API_URL = "https://api.adviceslip.com/advice";
     try {
         const response = await fetch(API_URL);
         if (response.ok) {
@@ -26,15 +25,15 @@ function displayAdvice(adviceSlip) {
 async function getRandomAdvice() {
     try {
         cardElement.children[1].textContent = "Loading...";
-        const slip = await fetchAdvice();
-        adviceSlip = slip;
-        console.log(slip);
-        displayAdvice(slip);
+        return await fetchAdvice();
     } catch (error) {
         cardElement.children[1].textContent = "Error loading advice";
     }
 }
+async function generateAdvice(){
+    let slip = await getRandomAdvice()
+    displayAdvice(slip)
+}
+generateAdvice();
 
-getRandomAdvice();
-
-diceBtnElement.addEventListener('click', getRandomAdvice);
+diceBtnElement.addEventListener('click', generateAdvice);
